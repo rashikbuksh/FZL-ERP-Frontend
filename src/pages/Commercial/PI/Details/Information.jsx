@@ -5,6 +5,7 @@ import { format } from 'date-fns';
 import PiPdf from '@/components/Pdf/PI';
 import SectionContainer from '@/ui/Others/SectionContainer';
 import RenderTable from '@/ui/Others/Table/RenderTable';
+import { StatusButton } from '@/ui';
 
 import { DollarToWord } from '@/lib/NumToWord';
 
@@ -41,6 +42,7 @@ export default function Information({ pi, dataForCommercial = null }) {
 		remarks,
 		pi_cash_entry,
 		pi_cash_entry_thread,
+		is_inch,
 	} = pi;
 
 	const getUniqueValues = (field, arr = []) =>
@@ -201,6 +203,10 @@ export default function Information({ pi, dataForCommercial = null }) {
 						{countLengthThreads}
 					</div>
 				),
+			},
+			{
+				label: 'Show Inch Btn',
+				value: <StatusButton size='btn-xs' value={is_inch} />,
 			},
 			{
 				label: 'Value ($)',

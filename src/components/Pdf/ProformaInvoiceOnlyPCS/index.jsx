@@ -109,7 +109,7 @@ export default function Index(data) {
 				style[item].add(item2.style);
 				orderID[item].add(item2.order_number);
 				TotalUnitPrice[item].add(item2.unit_price);
-				is_inch = item2.is_inch;
+				is_inch = item2.pi_is_inch ?? item2.is_inch;
 				order_type = item2.order_type;
 			}
 		});
