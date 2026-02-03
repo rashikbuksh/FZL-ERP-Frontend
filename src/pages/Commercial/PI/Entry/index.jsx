@@ -261,6 +261,7 @@ export default function Index() {
 				is_rtgs: rest?.is_rtgs,
 				updated_by: user?.uuid,
 				updated_at: GetDateTime(),
+				is_inch: rest?.is_inch,
 			};
 
 			//* pi entry update

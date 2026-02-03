@@ -57,6 +57,12 @@ export default function Header({
 						text='text-primary-content'
 						{...{ register, errors }}
 					/>
+					<CheckBox
+						title='Show Inch'
+						label='is_inch'
+						text='text-primary-content'
+						{...{ register, errors }}
+					/>
 					{is_lc_input_manual_access && (
 						<CheckBox
 							title='LC Input Manual'
