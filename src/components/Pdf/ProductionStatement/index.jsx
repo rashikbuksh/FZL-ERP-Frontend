@@ -531,7 +531,7 @@ export default function Index(data, from, to) {
 				table: {
 					headerRows: 1,
 					widths: [
-						65, 40, 80, 50, 70, 55, 60, 40, 40, 45, 45, 45, 45,
+						65, 40, 65, 55, 70, 65, 60, 40, 40, 45, 45, 45, 45,
 					],
 					body: [
 						TableHeader(node),
